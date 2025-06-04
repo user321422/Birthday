@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+    <link rel="stylesheet" href="./style.css">
+    <title>For My Love ❤️</title>
+</head>
+<body>
+    <div id="countdown-section">
+        <div class="countdown-container">
+            <h1 class="countdown-title">Hey Beautiful 💝</h1>
+            <p class="pre-countdown-message">
+                I'm preparing something special just for you...<br>
+                Your birthday celebration begins in:
+            </p>
+            <div class="clock-holder">
+                <div class="time-block">
+                    <font id="days">00</font>
+                    <span class="time-label">Days</span>
+                </div>
+                <font class="colon">:</font>
+                <div class="time-block">
+                    <font id="hours">00</font>
+                    <span class="time-label">Hours</span>
+                </div>
+                <font class="colon">:</font>
+                <div class="time-block">
+                    <font id="minutes">00</font>
+                    <span class="time-label">Minutes</span>
+                </div>
+                <font class="colon">:</font>
+                <div class="time-block">
+                    <font id="seconds">00</font>
+                    <span class="time-label">Seconds</span>
+                </div>
+            </div>
+            <p class="countdown-message">
+                On your special day,<br>
+                <span class="love-note">With all my love ❤️</span>
+            </p>
+            <button id="preview-button" class="preview-button">
+                Preview Surprise 👀
+            </button>
+        </div>
+    </div>
+
+    <div id="birthday-content" style="display: none;">
+        <section id="one">
+            <div class="hero">
+                <div class="in-container">
+                    <p class="hey">
+                        Hey Beautiful
+                    </p>
+                </div>
+                <div class="in-container">
+                    <p class="hap">
+                        HAPPY BIRTHDAY
+                    </p>
+                </div>
+                <div class="in-container">
+                    <p class="i">
+                        I want to wish you your special day and was like I am an software enginner.
+                    </p>
+                </div>
+                <div class="in-container">
+                    <p class="so">
+                        So... I made you this website.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <div class="trans-p-c">
+
+        </div>
+        
+        <div class="trans-c-l">
+
+        </div>
+        <section id="three">
+            <div class="container-lum">
+                <img src="./BORI.png" alt="" class="bori"/>
+                <img src="./1000033967.png" alt="" class="love"/>
+            </div>
+            <div class="container-lum">
+                <p>
+                    "You're not easygoing, but you're passionate, and that's good. And when you get upset about the little things, I think that I'm pretty good about making you feel better about that. And that's good, too. So, they can say that you're high-maintenance, but it's OK because I like maintaining you."
+                    <br/><br/> — Narayan
+                </p>
+            </div>
+        </section>
+        <div class="trans-l-p">
+
+        </div>
+
+        <div class="trans-p-la">
+
+        </div>
+        <section id="five">
+            <div class="container-cotton">
+                <p class="birthday-wishes">
+                    Happy Birthday to the amazing soul who graced my life with her presence! 🎂 Your special day is a reminder of the incredible journey we've shared and the beautiful moments that lie ahead.<br/><br/>
+
+From the moment we met, your laughter has been the melody that dances in my heart, and your kindness has been the anchor that grounds my soul. As you embark on another year of your life's adventure, I hope it is the best year you ever had yet. May you continue to spread your infectious joy to everyone you meet, just as you've illuminated my life with your radiant smile.<br/><br/>
+
+Here's to celebrating your dreams, your accomplishments, and the incredible person you are. May your wishes come true like magic, and may your heart always be surrounded by the warmth of love and the support of those who cherish you.<br/><br/>
+
+Thank you for being the person you are and for sharing your beautiful soul with me. Cheers to celebrating the wonderful you on this special day and every day that follows. Happy Birthday, my love! 🎈❤️🥳
+                </p>
+            </div>
+            <div class="container-cotton">
+                <p>
+                    I make the best cake you will ever find, just for you!<br/>
+                    Blow the candle Boo....<br/><br/>
+                    Go, shorty<br/>
+It's your birthday<br/>
+                </p>
+                <img src="./cake.png" alt="" class="cake"/>
+            </div>
+            <div class="container-cotton">
+                <p>
+                    Make with ❤ by Narayan
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <div class="floating-hearts"></div>
+    <script src="./main.js"></script>
+    <script>
+    function createFloatingElement(type) {
+        const el = document.createElement('div');
+        el.classList.add(type);
+        const size = Math.random() * 10 + 10;
+        el.style.width = size + 'px';
+        el.style.height = size + 'px';
+        el.style.left = Math.random() * 100 + 'vw';
+        el.style.animationDuration = (Math.random() * 5 + 5) + 's';
+        el.style.animationDelay = (Math.random() * 3) + 's';
+        document.querySelector('.floating-hearts').appendChild(el);
+        setTimeout(() => el.remove(), 10000);
+    }
+
+    setInterval(() => {
+        const type = Math.random() > 0.5 ? 'heart' : 'petal';
+        createFloatingElement(type);
+    }, 300);
+    </script>
+</body>
+</html>
