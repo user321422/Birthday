@@ -161,14 +161,3 @@ document.addEventListener('DOMContentLoaded', () => {
 setInterval(updateCountdown, 1000);
 updateCountdown(); // Initial call
 
-// Card selection function
-function cardSelected(card) {
-    const cards = document.querySelectorAll('.card');
-    cards.forEach(c => {
-        if (c !== card) {
-            c.classList.add('fade-out');
-        }
-    });
-    card.classList.add('show');
-}
-
