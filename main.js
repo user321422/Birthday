@@ -1,7 +1,7 @@
 // Countdown Timer
 function updateCountdown() {
     // Nepal is UTC+5:45
-    const targetDate = new Date('2025-06-10T00:07:10+05:45'); // 1st of Asar 2082 in Gregorian calendar
+    const targetDate = new Date('2025-06-15T00:00:00+05:45''); // 1st of Asar 2082 in Gregorian calendar
     const currentDate = new Date();
 
     const timeDifference = targetDate - currentDate;
